@@ -21,7 +21,7 @@
                 <div class="flex items-center">
                     <div class="flex w-19 mr-3 bg-slate-300 p-2 rounded-full items-center">
                         <img class="w-5 h-5 mr-2" src="assets/checkbox.png" alt="CheakBox pic">
-                        <h2 class="font-bold">23</h2>
+                        <h2 id="checkbox-number" class="font-bold">22</h2>
                     </div>
                     <img class="w-8 flex  bg-slate-300 p-1 rounded-full items-center" src="assets/theme-btn.png" alt="Theme button">
                 </div>
@@ -29,9 +29,137 @@
         </header>
 
         <section class="flex mt-2">
-            <section class="bg-white w-9/12 min-h-screen mr-2 rounded-lg"></section>
-            <section class="bg-green-300 w-3/12 min-h-screen rounded-lg"></section>
+            <section class="bg-white w-9/12 min-h-screen mr-2 rounded-lg">
+                <div class="flex p-3">
+                    <div class="bg-slate-300 w-3/12 flex justify-center items-center overflow-auto p-2 rounded-lg">
+                        <img class=" sm:w-auto md:w-10 md:mr-2 p-2 bg-slate-200 rounded-full" src="assets/checkbox.png" alt="checkbox logo">
+                        <div class=" text-center sm:w-auto sm:text-xs ">
+                            <p class="text-sm">Task Assigned</p>
+                            <h2 id="task" class="font-bold text-2xl ">06</h2>
+                        </div>
+                    </div> <!--Task div-->
+                    <div class=" flex py-3 px-5 rounded-lg bg-gradient-to-r from-blue-600 to-blue-200 w-6/12 sm:mr-2 sm:ml-2 md:mr-3 md:ml-3">
+                        <img class="w-10" src="assets/board.png" alt="board picture">
+                        <p class="md:ml-4 text-white">Discover Something <br> New Today!</p>
+                    </div> <!--Board Div-->
+                    <div class="bg-slate-300 w-3/12 flex items-center justify-center rounded-lg p-2">
+                        <div class="bg-slate-100 p-2 rounded-full w-12 h-10 mr-3 flex justify-center items-center">
+                            <img class="w-5" src="assets/calender.png" alt="calender">
+                        </div>
+                        <div class="" id="dateTime">
+                            <h4 id="date"></h4>
+                        </div>
+                    </div> <!--Wed Div-->
+                </div> <!--Discver Section-->
+
+                <div class="cards grid grid-cols-3">
+
+                    <div class="">
+                        <div class="card bg-slate-200 p-2 w-60 m-2">
+                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                            
+                            <div class="mt-2 flex justify-between items-center">
+                                <div class="">
+                                    <p>Deadline</p>
+                                    <h4 class="font-bold">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button id="shop-btn" class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card bg-slate-200 p-2 w-60 m-2">
+                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                            
+                            <div class="mt-2 flex justify-between items-center">
+                                <div class="">
+                                    <p>Deadline</p>
+                                    <h4 class="font-bold">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card bg-slate-200 p-2 w-60 m-2">
+                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                            
+                            <div class="mt-2 flex justify-between items-center">
+                                <div class="">
+                                    <p>Deadline</p>
+                                    <h4 class="font-bold">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-slate-200 p-2 w-60 m-2">
+                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                        
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-slate-200 p-2 w-60 m-2">
+                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                        
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-slate-200 p-2 w-60 m-2">
+                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
+                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
+                        
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p>Deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-green-300 w-3/12 min-h-screen rounded-lg"></section> <!--Activity sec-->
         </section>
+
     </main>
+
+    <script src="script/date-time.js"></script>
+    <script src="script/math.js"></script>
 </body>
 </html>

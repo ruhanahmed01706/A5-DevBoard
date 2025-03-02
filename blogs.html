@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Daisy UI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200">
+    <main class="w-11/12 min-h-screen mx-auto pt-1 ">
+        <header class="p-2 bg-white rounded-lg">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img class="w-8 mr-2" src="assets/logo.png" alt="DevBoard Logo">
+                    <h1 class="text-black text-2xl">Dev <span class="font-bold ">Board</span></h1>
+                </div>
+                <button class="btn btn-primary" >Back To Desk</button>
+            </nav>
+        </header>
+        <h1 class="text-center text-3xl font-bold my-3">Blogs</h1>
+
+        <div class="bg-white p-2 rounded-lg">
+            <h1 class="text-xl font-bold bg-white p-2  border-b-2 border-dashed border-gray-500">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <p class="">DOM এ একটি উপাদান নির্বাচন করার বিভিন্ন উপায় রয়েছে ঃ<br> <br> 
+                ১. document.getElementById("id") <br>
+                শুধুমাত্র ID অনুসারে খোঁজে। <br> <br>
+                ২. document.getElementsByClassName("class") <br>
+                একই ক্লাসের সব এলিমেন্ট নেয়। <br> <br>
+                ৩. document.getElementsByTagName("tag") <br>
+                নির্দিষ্ট ট্যাগের সব এলিমেন্ট নেয়। <br> <br>
+                ৪. document.querySelector("selector") <br>
+                CSS সিলেক্টরের মতো কাজ করে। <br> <br> 
+                ৫. document.querySelectorAll("selector") <br>
+                সব ম্যাচ করা এলিমেন্ট নেয়। <br> <br> 
+
+            </p>
+        </div>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <h1 class="text-xl font-bold bg-white p-2  border-b-2 border-dashed border-gray-500">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <p>
+            ১.innerHTML JavaScript File থেকে Html কোনো ট্যাগের ভিতর অনেকগুলো HTML ট্যাগ লেখার জন্য ব্যবহার করা হয়। <br>
+            ২.innerText JavaScript File থেকে Html কোনো ট্যাগের ভিতর text add করা ও লেখার জন্য ব্যবহার করা হয়। 
+            </p>
+        </div>
+
+        <div class="bg-white p-2 rounded-lg">
+            <h1 class="text-xl font-bold bg-white p-2  border-b-2 border-dashed border-gray-500">Question-3: What is event delegation in the DOM?</h1>
+            <p>ইভেন্ট ডেলিগেশন হলো একটি parent এলিমেন্টে ইভেন্ট লিসেনার যুক্ত করার কৌশল, যা child এলিমেন্টের ইভেন্টগুলোর প্রতিক্রিয়া জানাতে পারে।</p>
+        </div>
+
+        <div class="bg-white p-2 rounded-lg my-4">
+            <h1 class="text-xl font-bold bg-white p-2  border-b-2 border-dashed border-gray-500">Question-4: What is event bubbling in the DOM?</h1>
+            <p>ইভেন্ট বাবলিং হল DOM ইভেন্ট হ্যান্ডলিং-এর একটি প্রক্রিয়া, যেখানে কোনো চাইল্ড এলিমেন্টে ইভেন্ট ঘটলে, সেটি ধাপে ধাপে তার প্যারেন্ট এবং আরও উপরের এলিমেন্টগুলোতে পৌঁছে যায়।</p>
+        </div>
+
+        <div class="bg-white p-2 rounded-lg mb-4">
+            <h1 class="text-xl font-bold bg-white p-2  border-b-2 border-dashed border-gray-500">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p>
+                ১.জাভাস্ক্রিপ্টে নতুন HTML এলিমেন্ট তৈরি করতে document.createElement("tagName") ব্যবহার করা হয়। <br><br>
+                ২. ওয়েবপেজে এলিমেন্ট যোগ করা<br>
+                    * appendChild() শেষে যোগ করা <br>
+                    * prepend() শুরুতে যোগ করা<br>
+                    * insertBefore() নির্দিষ্ট এলিমেন্টের আগে যোগ করা <br> <br>
+                ৩.ওয়েবপেজ থেকে এলিমেন্ট মুছে ফেলা <br>
+                    * remove() সরাসরি এলিমেন্ট মুছতে <br>
+                    * removeChild() নির্দিষ্ট এলিমেন্ট মুছতে <br>
+                    * replaceChild() একটি এলিমেন্টকে নতুন এলিমেন্ট দিয়ে পরিবর্তন করা<br><br>
+
+            </p>
+        </div>
+    </main>
+</body>
+</html>
