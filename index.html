@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <!-- Daisy UI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
+
 <body class="text-black bg-pink-600">
     <main class="w-11/12 min-h-screen mx-auto pt-1 ">
         <header class="p-2 bg-white rounded-lg">
@@ -23,26 +25,29 @@
                         <img class="w-5 h-5 mr-2" src="assets/checkbox.png" alt="CheakBox pic">
                         <h2 id="checkbox-number" class="font-bold">22</h2>
                     </div>
-                    <img class="w-8 flex  bg-slate-300 p-1 rounded-full items-center" src="assets/theme-btn.png" alt="Theme button">
+                    <img class="w-8 flex  bg-slate-300 p-1 rounded-full items-center" src="assets/theme-btn.png"
+                        alt="Theme button">
                 </div>
             </nav>
         </header>
 
         <section class="flex mt-2">
-            <section class="bg-white w-9/12 min-h-screen mr-2 rounded-lg">
-                <div class="flex p-3">
-                    <div class="bg-slate-300 w-3/12 flex justify-center items-center overflow-auto p-2 rounded-lg">
-                        <img class=" sm:w-auto md:w-10 md:mr-2 p-2 bg-slate-200 rounded-full" src="assets/checkbox.png" alt="checkbox logo">
+            <section class="bg-white md:w-9/12 min-h-screen mr-2 rounded-lg">
+                <div class="md:flex p-3 space-y-2">
+                    <div class="bg-slate-300 md:w-3/12 flex justify-center items-center overflow-auto p-2 rounded-lg">
+                        <img class=" sm:w-auto md:w-10 md:mr-2 p-2 bg-slate-200 rounded-full" src="assets/checkbox.png"
+                            alt="checkbox logo">
                         <div class=" text-center sm:w-auto sm:text-xs ">
                             <p class="text-sm">Task Assigned</p>
-                            <h2 id="task" class="font-bold text-2xl ">06</h2>
+                            <h2 id="task" class="font-bold text-xl ">06</h2>
                         </div>
                     </div> <!--Task div-->
-                    <div class=" flex py-3 px-5 rounded-lg bg-gradient-to-r from-blue-600 to-blue-200 w-6/12 sm:mr-2 sm:ml-2 md:mr-3 md:ml-3">
+                    <div id="discover"
+                        class="flex py-3 px-5 rounded-lg bg-gradient-to-r from-blue-600 to-blue-200 md:w-6/12 sm:mr-2 sm:ml-2 md:mr-3 md:ml-3">
                         <img class="w-10" src="assets/board.png" alt="board picture">
                         <p class="md:ml-4 text-white">Discover Something <br> New Today!</p>
                     </div> <!--Board Div-->
-                    <div class="bg-slate-300 w-3/12 flex items-center justify-center rounded-lg p-2">
+                    <div class="bg-slate-300 md:w-3/12 flex items-center justify-center rounded-lg p-2">
                         <div class="bg-slate-100 p-2 rounded-full w-12 h-10 mr-3 flex justify-center items-center">
                             <img class="w-5" src="assets/calender.png" alt="calender">
                         </div>
@@ -52,109 +57,113 @@
                     </div> <!--Wed Div-->
                 </div> <!--Discver Section-->
 
-                <div class="cards grid grid-cols-3">
+                <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">ShopEase</p>
+                        <h2 class="text-xl my-2">Fix Mobile Button</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Debug using Chrome DevTools, overlapping
+                            elements, and...</p>
 
-                    <div class="">
-                        <div class="card bg-slate-200 p-2 w-60 m-2">
-                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                            
-                            <div class="mt-2 flex justify-between items-center">
-                                <div class="">
-                                    <p>Deadline</p>
-                                    <h4 class="font-bold">21 March 2025</h4>
-                                </div>
-                                <div>
-                                    <button id="shop-btn" class="btn btn-primary">Completed</button>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card bg-slate-200 p-2 w-60 m-2">
-                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                            
-                            <div class="mt-2 flex justify-between items-center">
-                                <div class="">
-                                    <p>Deadline</p>
-                                    <h4 class="font-bold">21 March 2025</h4>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Completed</button>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card bg-slate-200 p-2 w-60 m-2">
-                            <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                            <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                            <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                            
-                            <div class="mt-2 flex justify-between items-center">
-                                <div class="">
-                                    <p>Deadline</p>
-                                    <h4 class="font-bold">21 March 2025</h4>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Completed</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-slate-200 p-2 w-60 m-2">
-                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                        
                         <div class="mt-2 flex justify-between items-center">
                             <div class="">
-                                <p>Deadline</p>
-                                <h4 class="font-bold">21 March 2025</h4>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="shop-btn" class="btn btn-primary btn-sm">Completed</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card bg-slate-200 p-2 w-60 m-2">
-                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                        
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">CloudSync</p>
+                        <h2 class="text-xl my-2">Add Dark Mode</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Store the user's preference in localStorage, update CSS variables dyn...</p>
                         <div class="mt-2 flex justify-between items-center">
                             <div class="">
-                                <p>Deadline</p>
-                                <h4 class="font-bold">21 March 2025</h4>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="dark-btn" class="btn btn-primary btn-sm">Completed</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card bg-slate-200 p-2 w-60 m-2">
-                        <p class="bg-white p-1 w-20 rounded-lg">ShopEase</p>
-                        <h2 class="text-2xl my-2">Fix Mobile Button</h2>
-                        <p class="bg-white text-ellipsis p-4 rounded-lg">Debug using Chrome DevTools, overlapping elements, and...</p>
-                        
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">SwiftPay</p>
+                        <h2 class="text-xl my-2">Optimize  Home page </h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Debug using Chrome DevTools, check for overla...</p>
                         <div class="mt-2 flex justify-between items-center">
                             <div class="">
-                                <p>Deadline</p>
-                                <h4 class="font-bold">21 March 2025</h4>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="page-btn" class="btn btn-primary btn-sm">Completed</button>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">Meta</p>
+                        <h2 class="text-xl my-2">Add new emoji 🤲</h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Debug using Chrome DevTools, check for overla...</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button id="meta-btn" class="btn btn-primary btn-sm">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">Google LLC</p>
+                        <h2 class="text-xl my-2">Integrate OpenAI API </h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Debug using Chrome DevTools, check for overla...</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button id="google-btn" class="btn btn-primary btn-sm">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-slate-200 p-2 m-2">
+                        <p class="bg-white p-1 w-16 rounded-lg text-xs">Glassdoar</p>
+                        <h2 class="text-xl my-2">Improve Job searching </h2>
+                        <p class="bg-white text-ellipsis p-4 rounded-lg text-xs">Debug using Chrome DevTools, check for overla...</p>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="">
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-bold text-xs">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button id="glass-btn" class="btn btn-primary btn-sm">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- cards end-->
             </section>
 
-            <section class="bg-green-300 w-3/12 min-h-screen rounded-lg"></section> <!--Activity sec-->
+            <section class="bg-slate-200 w-3/12 min-h-screen rounded-lg">
+                <div>
+                    <div class="flex justify-center items-center my-3">
+                        <img class="w-5" src="assets/activity.png" alt="activity png">
+                        <h2 class="text-2xl ml-2">Activity Log</h2>
+                    </div>
+                    <div class="flex items-center justify-center border-b-2 border-dashed border-gray-500"><button
+                            id="history-btn" class="btn btn-primary ">Clear History</button></div>
+                    <div id="History" class="m-4 bg-slate-200 rounded-lg "></div>
+                </div>
+            </section> <!--Activity sec-->
         </section>
 
     </main>
@@ -162,4 +171,5 @@
     <script src="script/date-time.js"></script>
     <script src="script/math.js"></script>
 </body>
+
 </html>
