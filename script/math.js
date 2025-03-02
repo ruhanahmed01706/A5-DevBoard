@@ -1,14 +1,13 @@
 document.getElementById('discover').addEventListener('click',function(){
     window.location.href="./blogs.html"
 })
-document.getElementById('back').addEventListener('click',function(){
-    window.location.href="./index.html"
-})
-
-alert('42524')
+function changeRandomColor() {
+    let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+}
 
 document.getElementById('shop-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
@@ -45,7 +44,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 document.getElementById('dark-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
@@ -84,7 +83,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 
 
 document.getElementById('page-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
@@ -111,7 +110,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 
 
 document.getElementById('meta-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
@@ -136,7 +135,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 document.getElementById('google-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
@@ -161,7 +160,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 document.getElementById('glass-btn').addEventListener('click',function(event){
-    alert('alert')
+    alert('Board Update Successfully')
     event.preventDefault();
     const task = document.getElementById('task').innerText;
     const convertedtask =parseFloat(task);
